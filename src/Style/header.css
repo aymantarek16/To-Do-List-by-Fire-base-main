@@ -1,0 +1,117 @@
+header {
+  background-color: teal;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.dark header {
+  background-color: rgb(44, 44, 70);
+}
+
+/* =======================
+Lunguage 
+======================= */
+ul.lang-box {
+  display: none;
+  position: absolute;
+  left: -16px;
+  top: 45px;
+  z-index: 5;
+  background-color: #1b1b1b;
+  border-top: 1px solid cyan;
+  width: 130px;
+  border-radius: 5px;
+}
+
+.light ul.lang-box{
+  background-color: #e2e2e2;
+}
+.light .languageText {
+  color: #e2e2e2 !important;
+}
+
+li.lang:hover ul.lang-box {
+  display: block;
+}
+
+ul.lang-box li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 8px;
+  text-align: start;
+  border-bottom: 1px solid black;
+  font-size: 14px;
+  transition: 0.15s;
+}
+
+ul.lang-box li:nth-child(3){
+  border-bottom: none;
+}
+
+
+ul.lang-box li:hover {
+  background-color: #151515;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.light ul.lang-box li:hover{
+  background-color: teal;
+}
+.light ul.lang-box li:hover p{
+  color: #fff !important;
+}
+
+
+
+
+.main-list {
+  padding: 10px 15px 14px;
+  position: relative;
+}
+
+.main-link {
+  padding: 5px 15px;
+}
+
+.main-link:hover,
+.main-link.active {
+  color: cyan;
+  box-shadow: 0 0 5px cyan;
+  border-radius: 5px;
+}
+
+@keyframes down {
+  0% {
+    transform: translateY(-100px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+header {
+  animation: down 1s 1;
+}
+
+/* ==================
+   header of mobile
+===================== */
+@media (min-width: 768px) and (max-width: 991px) {
+  .hide-when-mobile {
+    flex-direction: column;
+  }
+
+  header {
+    margin-bottom: 20px;
+  }
+
+  header i {
+    position: relative;
+    top: -20px;
+    left: 30px;
+  }
+}

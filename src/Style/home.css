@@ -1,0 +1,167 @@
+/* =================
+ table of contents
+===================== 
+1-  OPIONS (filtered data)
+2- SHOW all tasks
+3- Add new task BTN*/
+
+/* ==============================
+1-  OPIONS (filtered data)
+=================================*/
+.home .parent-of-btns {}
+
+.home .parent-of-btns button {
+  background-color: #3467c2;
+  font-size: 16px;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  margin-right: 15px;
+}
+
+.home select {
+  background-color: #666;
+  padding: 7px 14px;
+  border-radius: 4px;
+}
+
+/* ==============================
+2- SHOW all tasks
+=================================*/
+.home .all-tasks {
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.home .all-tasks .one-task {
+  border: 2px solid teal;
+  margin: 40px 20px;
+  width: 300px;
+  height: 141px;
+  border-radius: 5px;
+  height: fit-content;
+  transition: 0.2s;
+  position: relative;
+}
+
+.home .task-link {
+  display: block;
+  padding-bottom: 15px;  
+}
+
+.dark .home .all-tasks .one-task {
+  border: 2px solid rgb(85, 85, 112);
+}
+
+.home .all-tasks .one-task:hover {
+  border-left: 8px solid teal;
+  cursor: pointer;
+}
+
+.dark .home .all-tasks .one-task:hover {
+  border-left: 8px solid rgb(85, 85, 112);
+}
+
+.home .all-tasks .one-task h2 {
+  font-size: 24px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.home .all-tasks .one-task li {
+  list-style-position: inside;
+  list-style-type: circle;
+  line-height: 29px;
+  font-size: 13px;
+  text-align: start;
+  margin: 0 11px;
+  color: #121212;
+
+}
+
+.dark .home .all-tasks .one-task li {
+  color: #fff;
+}
+
+.home .all-tasks .one-task .time {
+  font-size: 12px;
+  font-weight: bold;
+  text-align: right;
+  color: rgb(164, 213, 255);
+  position: absolute;
+  bottom: -10px;
+  right: 9px;
+}
+
+/* ==============================
+3- Add new task BTN
+=================================*/
+
+.home .add-task-btn {
+  background-color: teal;
+  font-size: 16px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 44px;
+}
+
+.home .add-task-btn .fa-plus {
+  font-size: 14px;
+}
+
+/* ==============================
+4- Style of Modal of New Task
+=================================*/
+.modal .parent-of-modalInput {
+  line-height: 10px;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.modal .parent-of-modalInput .titleInput {
+  /* border: 1px solid red; */
+}
+
+.modal .parent-of-modalInput .detailsInput {
+  /* border: 1px solid red; */
+  margin-top: 20px !important;
+}
+
+.modal .list-of-modal {
+  margin-top: 15px;
+  max-height: 80px;
+  width: 70%;
+  overflow-y: auto;
+}
+
+.modal .list-of-modal li {
+  font-size: 13px;
+  color: #333;
+  list-style-type: circle;
+  list-style-position: inside;
+  line-height: 25px;
+}
+
+.home .show-message {
+  background-color: teal;
+  font-size: 18px;
+  color: #e2e2e2 !important;
+  padding: 3px 15px;
+  font-weight: normal;
+  font-style: italic;
+  border-radius: 5px;
+  position: fixed;
+  top: 100px;
+  transition: 1s;
+}
+
+.dark .home .show-message{
+  background-color: whitesmoke;
+  color: #1b1b1b !important;
+}
+
+.home .fa-circle-check{
+  color: rgb(30,200,200);
+  margin-left: 5px;
+}

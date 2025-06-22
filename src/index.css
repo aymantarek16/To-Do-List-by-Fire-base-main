@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+
+/* ==============================
+     Global Properties
+=============================== */
+* {
+  margin: 0;
+  padding: 0;
+  color: #f2f2f2;
+  font-family: 'Cairo', sans-serif;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+span {
+  animation: heart 2s infinite linear;
+}
+
+@keyframes heart {
+
+  0%,
+  100% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+h1 {
+  padding: 10px 0;
+  font-size: 25px;
+}
+
+html,
+body {
+  overflow-y: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+div {
+  color: #1b1b1b !important;
+}
+
+/* ==============================
+     Classed reusable
+=============================== */
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.mt {
+  margin-top: 1em !important;
+}
+
+.mtt {
+  margin-top: 2em !important;
+}
+
+.mttt {
+  margin-top: 3em !important;
+}
+
+.center {
+  text-align: center;
+}
+
+.text-through {
+  text-decoration: line-through teal 4px;
+}
+
+.dark .text-through {
+  text-decoration: line-through #2c2c46 4px;
+}
+
+.btn-red:hover {
+  outline: none;
+  border: none;
+  box-shadow: none;
+  background-color: brown;
+}
+
+/* ==========================
+ Dark Mode
+=============================*/
+.dark h1,
+.dark h2,
+.dark h3,
+.dark h4,
+.dark h5,
+.dark h6,
+.dark p,
+.dark span,
+.dark div {
+  color: #f2f2f2 !important;
+}
+
+.dark main {
+  background-color: #1a1a1a;
+}
+
+.dark button {
+  background-color: rgb(44, 44, 70) !important;
+}
+
+/* ==============================
+     Global Styles
+=============================== */
+
+main {
+  color: #1b1b1b;
+  background-color: #f2f2f2;
+  min-height: calc(100vh - 133px);
+  height: auto;
+  font-size: 30px;
+  line-height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: all .1s;
+}
+
+button:hover {
+  scale: 1.05;
+}
+
+button:active {
+  scale: 0.9;
+}
+
+.btn-red,
+.dark .btn-red {
+  font-size: 16px;
+  background-color: brown !important;
+  margin-top: 20px;
+  outline: none;
+  border: none;
+}
+
+/* ==========================
+Global Form Styles
+=============================*/
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin-bottom: 18px;
+  padding: 6px 4px;
+  border: 2px solid #e2e2e2;
+  /* box-shadow: 0 2px 5px #e2e2e2; */
+  outline: none;
+  border-radius: 5px;
+  color: #000;
+  font-size: 16px;
+  padding: 5px;
+  transition: all 0.2s;
+}
+
+
+
+
+
+
+
+form button {
+  padding: 8px 12px;
+  background-color: teal;
+  border-radius: 5px;
+  color: #000;
+  font-size: 16px;
+  border: none;
+  color: white;
+}
+
+form button:active {
+  scale: 0.9;
+  border-radius: 0;
+}
+
+.light .pls {
+  color: #111;
+}
+
+.light form p {
+  color: rgb(0, 0, 0);
+}
+
+.light main p,
+.light main h6,
+.light main time {
+  color: #555;
+}
+
+.light main button {
+  border: 2px solid white;
+}
+
+
+/* ==========================
+App[Body] Styles
+=============================*/
+.App {
+  min-height: 100vh;
+  background-color: #f2f2f2;
+  color: #000 !important;
+  transition: all 0.3s;
+}
+
+.App.dark {
+  background-color: #1a1a1a;
+}
+
+.App.dark main {
+  color: #fff;
+}
+
+.App div.toggleTheme {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  width: fit-content;
+  font-size: 26px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.App div.toggleTheme:hover {
+  font-size: 30px;
+}
+
+
+.App .toggleTheme .fa-moon-o {
+  color: #fff;
+  text-shadow: 0px 0px 11px #fff;
+}
+
+.App .toggleTheme .fa-sun-o {
+  color: #ffa500 !important;
+  text-shadow: 0px 0px 16px #ffa500;
+}

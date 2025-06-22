@@ -1,0 +1,38 @@
+footer {
+  position: relative;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 66px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 150px;
+  align-items: center;
+  background-color: teal;
+}
+
+.dark footer {
+  background-color: rgb(44, 44, 70);
+}
+
+footer p {
+  font-size: 18px;
+  color: #f2f2f2 !important;
+}
+
+footer .socialIcon {
+  display: flex;
+  gap: 25px;
+}
+
+footer .socialIcon a {
+  font-size: 18px;
+}
+
+footer .socialIcon a i {
+  transition: all 0.2s;
+}
+
+footer .socialIcon a:hover i {
+  transform: rotateY(180deg);
+}

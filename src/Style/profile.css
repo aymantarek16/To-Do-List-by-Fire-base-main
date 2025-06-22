@@ -1,0 +1,27 @@
+/* ================================ Profile Page ================================*/
+.profile {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+
+
+.profile .profileCard {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+}
+
+.profile .profileCard h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+.profile .profileCard p {
+  font-size: 18px;
+}
+
+

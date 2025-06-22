@@ -1,0 +1,65 @@
+/* ===================================
+(Sign-up - Sign-in)
+=================================== */
+.account {
+  font-size: 16px;
+  margin-top: 12px;
+  font-weight: 100;
+}
+
+.account a {
+  text-decoration: underline;
+  font-weight: 600;
+  color: #00c6c6;
+  font-size: 18px;
+}
+
+.light form p {
+  color: rgb(0, 0, 0);
+}
+
+
+form button:active {
+  scale: 0.9;
+  border-radius: 0;
+}
+
+.light p.LogOutDesc {
+  height: 82.2vh;
+  color: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+p.LogOutDesc {
+  height: 82.2vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 30px;
+}
+
+p.LogOutDesc a {
+  margin: 0 6px;
+  color: #00c6c6;
+  font-weight: bold;
+  position: relative;
+  top: 2px;
+  border-bottom: 2px solid;
+  padding-bottom: 2px;
+}
+
+.forget_desk {
+  font-size: 19px;
+  font-weight: normal;
+  cursor: pointer;
+  line-height: 20px;
+  transition: 0.3s;
+}
+
+.forget_desk:hover {
+  font-size: 21px;
+}
