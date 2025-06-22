@@ -8,13 +8,13 @@ const Footer = () => {
       <footer>
         <p>
           {i18n.language === "ar"
-            ? "مصمم ومطور بواسطه المهندس ايمن طارق"
+            ? "مصمم ومطور بواسطه ايمن طارق"
             : `Designed and developed by Ayman Tarek`}
             <span>🧡</span> © 2024
         </p>
 
         <div className="socialIcon">
-          <a href="https://www.facebook.com/" target="blank">
+          <a href="https://web.facebook.com/aymaantarek" target="blank">
             <i className="fa-brands fa-facebook"></i>
           </a>
 
@@ -33,7 +33,7 @@ const Footer = () => {
             <i className="fa-brands fa-whatsapp"></i>
           </a>
 
-          <a href="https://www.instagram.com/?hl=ar" target="blank">
+          <a href="https://www.instagram.com/ayman_tarek74/?hl=ar" target="blank">
             <i className="fa-brands fa-instagram"></i>
           </a>
         </div>
